@@ -1,0 +1,60 @@
+imgUploads.js
+project id	: submission-mgce-vitoboni
+
+private key	: 34.101.46.80
+
+bucket		: mgce-kash
+
+
+record.js
+public ip sql	: 34.101.36.221
+
+name		: money
+
+pw		: password123
+
+bald		: https://submission-mgce-vitoboni.et.r.appspot.com
+
+backend		: https://backend-dot-submission-mgce-vitoboni.et.r.appspot.com/
+
+frontend	: https://frontend-dot-submission-mgce-vitoboni.et.r.appspot.com
+
+
+app.yaml (update)
+runtime: php83
+service: frontend
+env: standard
+
+handlers:
+  - url: /.*
+    static_dir: auto
+
+app.yaml (OG)
+runtime: php83
+service: frontend
+
+handlers:
+  - url: /assets
+    static_dir: assets
+
+
+
+- SQL
+
+money-tracker-db
+
+password123
+
+34.101.36.221
+
+sudo apt-get update;
+sudo apt-get install mysql-client;
+mysql -h 34.101.36.221 -u root -p password123
+
+create database money;
+show database;
+
+git clone -b money-tracker-api https://github.com/dicodingacademy/a133-gcp-labs.git
+
+rename a133-gcp-labs - backend
+
